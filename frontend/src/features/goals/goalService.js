@@ -14,6 +14,19 @@ const createGoal = async (goalData, token) => {
     return response.data
 }
 
+//Update goal
+const updateGoal = async (goalId, goalData, token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const response = await axios.put(API_URL+goalId, goalData, config)
+
+    return response.data
+}
+
 //Get all goals
 const getGoals = async (token) => {
     const config = {
@@ -42,6 +55,7 @@ const goalService = {
     createGoal,
     getGoals,
     deleteGoal,
+    updateGoal
 }
 
 export default goalService;

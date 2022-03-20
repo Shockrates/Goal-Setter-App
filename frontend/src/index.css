@@ -99,6 +99,18 @@ h3 {
   position: relative;
 }
 
+.goal input
+ {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 /* .goal .close {
   position: absolute;
   top: 10px;
